@@ -1,0 +1,14 @@
+Resoluções maximas e suas quebras em minimas:
+
+
+Desktop
+max-width: 1024px;
+min-width: 900px;
+
+Tablet
+max-width: 768px;
+min-width: 720px;
+
+Smarthphone
+max-width: 480px;
+min-width: 320px;

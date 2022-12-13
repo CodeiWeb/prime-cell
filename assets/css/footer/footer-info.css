@@ -1,0 +1,40 @@
+.footer-info {
+  background-color: var(--d1);
+  height: 2.5rem;
+  text-align: center;
+  padding-top: 1.25rem;
+  padding-bottom: .625rem;
+}
+
+.info-prime {
+  margin-bottom: .3125rem;
+}
+
+.codei-web a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 900;
+
+}
+
+@media(min-width: 320px) and (max-width: 768px) {
+  
+  .footer-info {
+    text-align: center;
+    color: var(--cor2);
+    width: 100%;
+    background-color: var(--bc4);
+    text-align: center;
+    height: auto;
+  }
+
+
+  .info-prime {
+    padding-bottom: 5px;
+    font-size: 14.5px;
+  }
+  .codei-web {
+    display: initial;
+  }
+  }

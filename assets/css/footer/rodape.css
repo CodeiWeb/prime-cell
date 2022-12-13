@@ -1,0 +1,21 @@
+/* Dependências Footer */
+@import url(background-footer.css);
+@import url(footer-localizacao.css);
+@import url(maps.css);
+@import url(footer-info.css);
+@import url(button.css);
+
+/* Mãe - Ordem Crescente */
+.rodape {
+  background-color: black;
+  display: flex;
+}
+
+@media(min-width: 320px) and (max-width: 768px) {
+  .rodape {
+   
+    width: 100%;
+  }
+}
+
+

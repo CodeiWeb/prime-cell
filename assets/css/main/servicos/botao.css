@@ -1,0 +1,53 @@
+/* Filha do botao */
+.servicos_botao {
+  padding: .3125rem;
+  align-items: center;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.375rem;
+  color: white;
+  width: 9.375rem;
+  height: 1.5625rem;
+  background-color: black;
+  margin: 0 auto;
+  border-radius: .625rem;
+  box-shadow: -0.1869rem -0.1875rem #00ff0a;
+  margin-top: 2.375rem;
+  transition: 0.2s;
+}
+
+/* Troca de Cor - Botao */
+.servicos_botao:hover {
+  background-color: #00ff0a;
+  box-shadow: -0.1869rem -0.1875rem black;
+  color: black;
+  font-weight: 600;
+}
+
+
+@media(min-width: 320px) and (max-width: 768px) {
+  .botao {
+      font-family: 'Poppins';
+      display: block;
+      margin: 0 auto;
+      color: white;
+      font-weight: 600;
+      font-size: 20px;
+      width: 170px;
+      height: 42px;
+      background-color: black;
+      border-radius: 10px;
+      box-shadow: -5px -8px #00ff0a;
+  }
+
+  .servicos_botao {
+    padding: 10px;
+  }
+
+  .servicos_botao:hover {
+    display: none;
+  }
+}
+

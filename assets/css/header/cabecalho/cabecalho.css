@@ -1,0 +1,33 @@
+/* Dependências do Header */
+@import url(cabecalho-container.css);
+@import url(cabecalho-nav.css);
+
+/* Mãe - Ordem Crescente */
+.cabecalho {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 3.125rem;
+  gap: 1.25rem;
+  align-items: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  background-color: black;
+}
+
+/* Medidas Mobile 320-480*/
+@media(min-width: 320px) and (max-width: 768px) {
+ 
+  .cabecalho { 
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    background-color: black;
+    height: 5.3125rem;
+    align-items: center;
+  }
+  
+  .cabecalho_img {
+    width: 5rem;
+  }
+}

@@ -1,0 +1,138 @@
+/* Mãe - Ordem Crescente */
+.cabecalho_lista {
+  display: flex;
+  gap: 3.1rem;
+  align-items: center;
+}
+
+/* Filha da cabecalho_lista - Sem decoração no link*/
+.cabecalho_link {
+  color: var(--cor1);
+  text-decoration: none;
+  position: relative;
+}
+
+/* Efeito de linha embaixo do Serviços e Contatos */
+.cabecalho_link::after {
+  content: "";
+  width: 0px;
+  height: 3px;
+  display: block;
+  background-color: var(--cor3);
+  transition: 0.6s;
+  position: absolute;
+}
+
+/* 100% das palavras */
+.cabecalho_link:hover::after {
+  width: 100%;
+}
+
+/* Filha da cabecalho_lista */
+.cabecalho_orcamento {
+  padding: 0.625rem;
+  border-radius: 1rem;
+  background-color: #00ff0a;
+  color: black;
+  text-decoration: none;
+  transition: 0.2s;
+  display: block;
+}
+
+/* Dar efeito de aproximação no Orçamento */
+.cabecalho_orcamento:hover {
+  transform: scale(1.2);
+}
+
+#btn-mobile {
+  display: none;
+}
+
+/* Medidas Mobile 320-480*/
+@media (min-width: 320px) and (max-width: 768px) {
+  .cabecalho_orcamento {
+    background: #00ff0a;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border-radius: 0;
+  }
+  .cabecalho_lista {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 7.1875rem;
+    left: 0;
+    background-color: var(--cor1);
+    transition: 0.2s;
+    visibility: hidden; /* esconde o menu */
+    overflow: hidden; /* ajuste de bug do overflow*/
+  }
+
+  #nav.active .cabecalho_lista {
+    /* quando a nav estiver com a class .active o menu vai aparecer */
+    visibility: visible; /* faz o menu aparecer */
+    overflow: auto;
+    height: 8.125rem;
+  }
+
+  .cabecalho_item {
+    margin-top: 1.1875rem;
+    text-align: center;
+  }
+
+  .cabecalho_link {
+    color: var(--cor2);
+    text-decoration: none;
+    font-size: 0.875rem;
+  }
+
+  #btn-mobile {
+    /* Botão  de ação do menu hamburguer */
+    color: var(--bc4);
+    display: block;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  #hamburguer {
+    /* Menu Hamburguer */
+    display: block;
+    width: 1.25rem;
+    border-top: 0.125rem solid;
+  }
+
+  #hamburguer::after,
+  #hamburguer::before {
+    /* Hamburguer::after - Linha do meio e Hamburguer::before - linha de baixo */
+    content: "";
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    background-color: currentColor;
+    margin-top: 0.25rem;
+    transition: 0.4s;
+    position: relative;
+  }
+
+  #nav.active #hamburguer {
+    /* quando a nav estiver com a class .active a linha do meio vai desaparecer*/
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburguer::before {
+    /* quando a nav estiver com a class .active a primeira linha vai fazer uma rotação de 135deg*/
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburguer::after {
+    /* quando a nav estiver com a class .active a ultima linha ira fazer  uma rotação de -135deg*/
+    position: absolute;
+    top: 3.5625rem;
+    transform: rotate(-135deg);
+  }
+}
+

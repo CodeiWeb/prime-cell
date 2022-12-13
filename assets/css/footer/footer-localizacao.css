@@ -1,0 +1,149 @@
+/* Filha da rodape */
+.footer_localizacao {
+  margin-left: 5.625rem;
+  position: relative;
+}
+
+/* Divisão Informacao */
+.footer_localizacao::before {
+  position: absolute;
+  content: "";
+  width: .1875rem;
+  left: -2.5rem;
+  top: -0.9375rem;
+  height: 18.125rem;
+  display: block;
+  background-color: #d9d9d9;
+}
+
+/* Filha da footer_localizacao */
+.sub_titulo {
+  color: white;
+  font-weight: 700;
+  font-size: 1.4375rem;
+  margin-top: 1.25rem;
+}
+
+/* Filha da footer_localizacao */
+.texto_p {
+  color: white;
+  font-weight: 400;
+  font-size: 19px;
+  font-style: normal;
+  padding-bottom: .625rem;
+  padding-top: .625rem;
+}
+
+/* Espaçamento Titulo */
+#contatos h3,
+.container_contatos h3,
+.sub_titulo h3 {
+  margin: .625rem 0rem .625rem 4.375rem;
+}
+
+
+#contatos {
+  width: 100%;
+  background-color: black;
+  display: flex;
+}
+
+
+.footer_localizacao,
+.footer_whats,
+.footer_ig,
+.footer_face,
+.footer_email,
+.footer_horario {
+  padding: .1875rem;
+  display: flex;
+  align-items: center;
+  gap: .625rem;
+}
+
+
+.footer_localizacao {
+  margin-left: 4.25rem;
+}
+
+.container {
+  color: white;
+  padding: .625rem 0rem .625rem 0rem;
+}
+.container img {
+  width: 1.875rem;
+}
+.footer_localizacao img {
+  width: 2.1875rem;
+}
+
+.footer_localizacao a {
+  text-decoration: none;
+  color: white;
+}
+.test {
+  padding-top: .625rem;
+}
+
+@media(min-width: 320px) and (max-width: 768px) {
+  .footer_localizacao::before{
+    display: none;
+  }
+  
+  .container {
+    margin: 0;
+    font-size: 15px;
+    height: 100%;
+  }
+
+  .container img {
+    width: 1.875rem;
+  }
+  
+  .footer_localizacao,
+  .footer_whats,
+  .footer_ig,
+  .footer_face,
+  .footer_email,
+  .footer_horario {
+   padding: 0;
+    display: flex;
+    gap: 13px;
+    align-items: center;
+
+    
+  }
+
+.footer_whats {
+  padding-top: 5px;
+}
+  
+  #contatos h3,
+  .container_contatos h3,
+  .sub_titulo h3, .footer_localizacao {
+    margin-left: 20px;
+}
+
+.sub_titulo {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+
+
+  .texto_p {
+    font-size: 1.0625rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1280px) {
+  .texto_p {
+    font-size: 1.597vw;
+  }
+  .sub_titulo {
+    font-size: 1.79vw;
+  }
+
+  .footer_localizacao::before{
+    display: none;
+}
+}

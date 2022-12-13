@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+:root {
+  /* Textos */
+  --cor1: #ffffff;
+  --cor2: #000000;
+  --cor3: #00ff55;
+
+  /* Background */
+  --bc1: #000000;
+  --bc2: #f2f9f4;
+  --bc3: #ffffff;
+  --bc4: #42ff00;
+
+  /* Detalhe */
+  --d1: #00ff0a;
+}

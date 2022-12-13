@@ -1,0 +1,193 @@
+
+/* Filha do principal_troca-celular */
+.principal_titulo {
+  margin-top: 4.1875rem;
+  font-weight: 400;
+  font-size: 5.625rem;
+  text-align: center;
+}
+
+/* Filha do principal_troca-celular */
+.principal_description {
+  margin-top: .5625rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+/* Filha do principal_troca-celular */
+.principal_description2 {
+  margin-bottom: 1.875rem;
+  margin-top: .875rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 70px;
+  color: var(--cor3);
+}
+
+/* Filha do principal_troca-celular */
+.principal_link {
+  margin: 0 auto;
+  width: 259px;
+  color: black;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 800;
+  text-decoration: none;
+  padding: .5625rem .3125rem;
+  background: #00ff0a;
+  border-radius: .8125rem;
+  transition: 0.2s;
+  text-align: center;
+}
+.principal_link:hover {
+  transform: scale(1.2);
+}
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+  .principal {
+    width: 100%;
+    background-color: yellow;
+  }
+
+    .principal_troca-celular {  
+      margin: 0 auto;
+      width: 100%;
+      padding-top: 10px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    
+    .principal_iphone_mobile {
+      margin: 0 auto;
+      width: 76.38vw;
+    }
+
+    .bottom{
+      display: flex;
+      justify-content: end;
+
+    }
+
+
+    .top > div{
+      border-left: 23.77vw solid black;
+      border-bottom: 27.77vw solid transparent; 
+  }
+
+    .bottom > div {
+      border-left: 27.77vw solid transparent;
+      border-bottom: 27.77vw solid black;
+    }
+    
+    
+    .principal_description2 {
+      color: var(--bc1);
+      font-size: 40px;
+      text-shadow: 5px 5px var(--bc4);
+      font-weight: 900;
+    }  
+    
+    
+    .principal_titulo {
+      padding-bottom: 20px;
+      font-weight: 600;
+      margin: 0 auto;
+      width: 300px;
+      text-transform: uppercase;
+      margin-top: 0px;
+      font-size: 16vw;
+    }
+    .principal_iphone_desktop {
+      display: none;
+    }
+}
+  
+@media (min-width: 481px) and (max-width: 768px) { 
+  .principal_titulo {
+    width: 400px;
+    font-size: 11vw;
+  }
+  .principal_link  {
+    padding: 10px;
+  }
+  
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1980px) {
+  /* Ajustamento de Fonte */
+
+  .principal_description {
+    font-size: 2.5vw;
+    
+  }
+
+
+  .principal_titulo {
+    text-transform: uppercase;
+    width: 350px;
+  }
+
+  .principal_description2 {
+    
+      color: var(--bc1);
+      font-size: 40px;
+      text-shadow: 5px 5px var(--bc4);
+      font-weight: 900;
+    } 
+  
+
+  .principal_link {
+    margin: 0 auto;
+    font-size: 1.875vw;
+  }
+
+  
+  .principal_troca-celular {
+    display: flex;
+  }
+  
+  .principal_iphone_mobile {
+    display: none;
+  }
+
+  .principal_iphone_desktop {
+    width: 50vw;
+  }
+  
+  .box_principal {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+}
+
+@media (min-width: 1184px) {
+  .box_principal {
+    padding-top: 20px;
+  }
+
+  .principal_description2 {
+    font-size: 3.5vw;
+  }
+  .principal_iphone_desktop {
+   width: 40vw;
+  }
+
+  .principal_titulo {
+    font-size: 7vw;
+    width: 500px;
+    text-transform: uppercase;
+  }
+.principal_link {
+  width: 350px;
+  font-size: 30px;
+}
+
+
+}

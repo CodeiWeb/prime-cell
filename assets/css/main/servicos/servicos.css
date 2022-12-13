@@ -1,0 +1,56 @@
+/* Dependências Main-Servicos */
+@import url(servicos-container.css);
+@import url(botao.css);
+
+/* Mãe - Ordem Crescente */
+.servicos {
+  background: linear-gradient(180deg, #ffffff 95%, #42ff00 100%);
+  height: 1050px;
+}
+
+/* Filha da servicos */
+.servicos_titulo {
+  padding-top: 49px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 55px;
+  color: black;
+}
+
+/* Detalhe Verde */
+.detalhe-verde2::after {
+  content: "";
+  margin: 10px auto;
+  display: block;
+  width: 550px;
+  height: 4px;
+  background: #00ff0a;
+}
+
+@media(min-width: 320px) and (max-width: 768px) {
+  .servicos {
+    height: 100%;
+    order: -1;
+    width: 100%;
+    background:  white;
+  
+  }
+  .servicos_titulo {
+    padding-top: 17px;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .detalhe-verde2::after {
+  width: 219px;
+  height: 4px;
+  background: #00ff0a
+}
+}
+
+@media(min-width: 769px) and (max-width: 1024px) {
+  .servicos_titulo {
+    font-size: 48px;
+    font-weight: 600; 
+  }
+}

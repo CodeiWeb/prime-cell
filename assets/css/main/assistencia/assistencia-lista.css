@@ -1,0 +1,61 @@
+/* Filha da assistencia */
+.assistencia_lista {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  justify-content: center;
+}
+
+/* Filha da assistencia_lista */
+.assistencia_icones {
+  padding: 20px;
+  transition: 0.2s;
+
+}
+
+/* Efeito de Aproximação */
+.assistencia_icones:hover {
+  transform: scale(1.1);
+}
+
+/* Imagens Adaptativas */
+.assistencia_icones img {
+  width: 14.06vw;
+}
+
+@media(min-width: 320px) and (max-width: 768px) {
+.assistencia_lista {
+  display: flex;
+  margin-top: 18px;
+  gap: 11px;
+  margin-bottom: 36px;
+}
+
+.assistencia_icones {
+  padding: 0;
+}
+
+.assistencia_icones img{
+  width: 50px;
+  padding: none;
+}
+
+  @media (min-width: 440px) {
+    .assistencia_icones img {
+    width: 75px;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .assistencia_icones img {
+    width: 13.5vw;
+  }
+
+  .assistencia_lista {
+    gap: 5px;
+  
+}
+
+
+}

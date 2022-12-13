@@ -1,0 +1,86 @@
+/* Dependências Main-Sobre */
+@import url(sobre-description-container.css);
+
+/* Mãe - Ordem Crescente */
+.sobre {
+  border-bottom: 2px solid #00ff0a;
+  height: 700px;
+  background-color: black;
+  font-weight: 500px; /* peso */
+  font-size: 24px; /* tamanho */
+  color: white;
+  text-align: center;
+}
+
+/* Filha da sobre */
+.sobre-img {
+  width: 110px;
+  margin-top: 25px;
+}
+
+/* Filha da sobre */
+.sobre-titulo {
+  font-weight: 600; /* peso */
+  font-size: 55px; /* tamanho */
+  color: white;
+  margin-bottom: 50px;
+}
+
+/* Detalhe Verde */
+.detalhe-verde::after {
+  content: "";
+  margin: 10px auto;
+  display: block;
+  width: 343px;
+  height: 4px;
+  background: #00ff0a;
+}
+
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .sobre {
+    border: none;
+    height: 100%;
+  }
+
+  .sobre-img {
+    padding: 18px 0px;
+  }
+
+  .sobre-titulo {
+    font-size: 2rem;
+  }
+
+  .sobre-texto {
+    line-height: 1.78rem;
+    margin: 43px auto 0px;
+    font-size: 1.1875rem;
+    width: 320px;
+  }
+
+  .sobre-img {
+    padding: 18px 0px;
+  }
+
+  .detalhe-verde::after {
+    width: 219px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .sobre-texto {
+    font-size: 1.2rem;
+    
+  }
+
+  .sobre-titulo {
+    font-size: 48px;
+    font-weight: 600;
+  }
+
+}

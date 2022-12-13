@@ -1,0 +1,34 @@
+
+
+/* Dependências Main-Assistencia */
+@import url(assistencia-container.css);
+@import url(assistencia-lista.css);
+
+/* Mãe - Ordem Crescente */
+.assistencia {
+  height: 850px;
+  background-color: black;
+}
+
+@media(min-width: 320px) and (max-width: 768px) {
+  .assistencia {
+    margin-top: 93px;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+  }
+  .teste {
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .teste {
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+}

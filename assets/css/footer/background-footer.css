@@ -1,0 +1,17 @@
+/* Filha da rodape */
+/* Somente até 940 width */
+.background-footer {
+  background-image: url(../../pictures/background-s/background-footer.png);
+  width: 26.6431rem;
+  height: 18.2494rem;
+  margin: auto 1.25rem;
+}
+
+
+/* Filha da background-footer */
+
+@media(min-width: 320px) and (max-width: 1280px) {
+  .background-footer {
+    display: none;
+  }
+}

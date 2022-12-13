@@ -1,0 +1,10 @@
+/* Filha da cabecalho */
+.cabecalho_container {
+  background-color: black;
+  
+}
+
+/* Filha da cabecalho_container */
+.cabecalho_img {
+  width: 6.625rem;
+}

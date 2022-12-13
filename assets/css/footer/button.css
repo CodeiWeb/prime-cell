@@ -1,0 +1,35 @@
+/* Mãe - Ordem Crescente */
+.button-fixed {
+  position: fixed;
+  bottom: 4.8125rem;
+  right: .75rem;
+  z-index: 1;
+}
+
+/* Filha da button-fixed */
+button {
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  border: none;
+  padding: .3125rem;
+  background-color: var(--d1);
+  font-weight: 900;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Filha da button */
+.img-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+
+@media(min-width: 320px) and (max-width: 1024px) {
+  .button-fixed {
+    display: none;
+  }
+
+}

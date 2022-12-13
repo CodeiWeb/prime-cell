@@ -1,0 +1,36 @@
+/* Dependências Main-Principal */
+@import url(principal-troca-celular.css);
+
+/* Mãe - Ordem Crescente */
+.principal {
+  background-color: #f2f9f4; 
+  background-repeat: no-repeat;
+  height: 755px;
+}
+
+
+
+@media(min-width: 320px) and (max-width:768px) {
+  .principal {
+    background-color: #F2F9F4;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 1600px) {
+  .principal {
+    height: 100%;
+    padding: 80px 0px;
+  }
+}
+
+
+@media (min-width: 1184px) {
+  .principal {
+    padding-top: 50px;
+  }
+}
+

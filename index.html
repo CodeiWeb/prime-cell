@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/cores.css">
+  <title>Prime Cell </title>
+</head>
+
+<body>
+  <!-- A img é um link de volta a home "pagina principal". -->
+  <header class="cabecalho">
+    <div class="cabecalho_container">
+      <a href="index.html">
+        <img class="cabecalho_img" src="assets/pictures/prime-cell.png" alt="icone-primecell">
+      </a>
+    </div>
+    <nav id="nav" class="cabecalho_nav">
+      <button id="btn-mobile">
+        <span id="hamburguer"></span>
+      </button>
+      <!-- Navegação dentro do menu header-->
+      <ul class="cabecalho_lista">
+        <li class="cabecalho_item">
+          <a class="cabecalho_link" href="#servicos">Serviços</a>
+        </li>
+        <li class="cabecalho_item">
+          <a class="cabecalho_link" href="#contatos">Contato</a>
+        </li>
+        <li class="cabecalho_item">
+          <a class="cabecalho_orcamento" href="#">ORÇAMENTO RÁPIDO</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="principal">
+      <div class="top">
+        <div></div>
+      </div>
+      <div class="principal_troca-celular">
+        <img class="principal_iphone_desktop" src="assets/pictures/icones/iphone-desktop.png" alt="">
+        <div class="box_principal">
+          <h1 class="principal_titulo">Troca de tela</h1>
+          <img class="principal_iphone_mobile" src="assets/pictures/icones/iphone-desktop.png" alt="foto-celular">
+          <p class="principal_description2">em até 1h</p>
+          <a href="#" class="principal_link">Solicitar Orçamento</a>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div></div>
+      </div>
+    </section>
+
+    <div class="teste">
+      <!-- Div foi criada para alterar o posicionamento dos itens -->
+      <section class="assistencia">
+        <div class="assistencia_container">
+          <h2 class="assistencia_titulo detalhe-verde">Assistência Técnica</h2>
+          <p class="assistencia_paragrafo">Fornecemos assistência técnica especializada, utilizando os melhores componentes disponíveis no mercado para seu smartphone.</p>
+          <h2 class="assistencia_titulo-marca detalhe-verde">Marca que trabalhamos</h2>
+        </div>
+        <ul class="assistencia_lista">
+          <li class="assistencia_icones">
+            <img src="assets/pictures/icones/icone-motorola.png" alt="icone-motorola">
+          </li>
+          <li class="assistencia_icones">
+            <img src="assets/pictures/icones/icone-apple.png" alt="icone-apple">
+          </li>
+          <li class="assistencia_icones">
+            <img src="assets/pictures/icones/icone-samsung.png" alt="icone-samsung">
+          </li>
+          <li class="assistencia_icones">
+            <img src="assets/pictures/icones/icone-android.png" alt="icone-android">
+          </li>
+          <li class="assistencia_icones">
+            <img src="assets/pictures/icones/icone-mi.png" alt="icone-mi">
+          </li>
+        </ul>
+      </section>
+
+      <section class="servicos">
+        <h2 class="servicos_titulo detalhe-verde2 link_servicos">Conheça os nossos serviços</h2>
+        <div class="servicos_container">
+          <ul id="servicos" class="servicos_lista">
+            <li class="servicos_item ">
+              <picture">
+                <img src="assets/pictures/icones/icone-telaquebrada.png" alt="tela-quebrada">
+                <p class="servicos_texto">Troca de Tela</p>
+
+                </picture>
+            </li>
+            <li class="servicos_item">
+              <picture>
+                <img src="assets/pictures/icones/icone-autofalante.png" alt="auto-falante">
+                <p class="servicos_texto">Auto Falante
+                  e Microfone</p>
+              </picture>
+            </li>
+            <li class="servicos_item ">
+              <picture>
+                <img src="assets/pictures/icones/icone-bateria.png" alt="bateria">
+                <p class="servicos_texto">Troca de Baterias</p>
+              </picture>
+            </li>
+            <li class="servicos_item ">
+              <picture">
+                <img src="assets/pictures/icones/icone-check.png" alt="check">
+                <p class="servicos_texto">Atualização</p>
+                </picture>
+            </li>
+            <li class="servicos_item">
+              <picture>
+                <img src="assets/pictures/icones/icone-chipset.png" alt="chipset">
+                <p class="servicos_texto">Reparo na Placa Principal</p>
+              </picture>
+            </li>
+            <li class="servicos_item ">
+              <picture>
+                <img src="assets/pictures/icones/icone-unlockeed.png" alt="unlockeed">
+                <p class="servicos_texto">Desbloqueio
+                  de Celular</p>
+              </picture>
+            </li>
+            <li class="servicos_item ">
+              <picture>
+                <img src="assets/pictures/icones/icone-usb-charger.png" alt="charger">
+                <p class="servicos_texto">Troca de Conectores</p>
+              </picture>
+            </li>
+            <li class="servicos_item ">
+              <picture>
+                <img class="desktop__icon" src="assets/pictures/icones/icone-restauracao.png" alt="restauracao">
+                <p class="servicos_texto">Restauração de Software</p>
+              </picture>
+            </li>
+            <li class="servicos_item ">
+              <picture>
+                <img src="assets/pictures/icones/icone-gota.png" alt="gota">
+                <p class="servicos_texto">Desoxidação de Celular</p>
+              </picture>
+            </li>
+          </ul>
+          <div class="carousel">
+            <!-- Div necessaria para o mobile quando chegar no desktop desative ela-->
+            <div class="box__card cc__1"><img src="assets/pictures/icones-mobile/Troca de Tela.png" alt="Icone tela quebrada"></div>
+            <div class="box__card cc__2"><img src="assets/pictures/icones-mobile/Alto Falante.png" alt="icone alto Falante"></div>
+            <div class="box__card cc__3"><img src="assets/pictures/icones-mobile/Troca de Bateria.png" alt="Icone bateria"></div>
+            <div class="box__card cc__4"><img src="assets/pictures/icones-mobile/Atualização.png" alt="Icone atualização"></div>
+            <div class="box__card cc__5"><img src="assets/pictures/icones-mobile/Restauração de Software.png" alt="Icone Restauração"></div>
+            <div class="box__card cc__6"><img src="assets/pictures/icones-mobile/Desbloqueio de celular.png" alt="Icone desbloqueio de celular"></div>
+            <div class="box__card cc__7"><img src="assets/pictures/icones-mobile/Troca de conectores.png" alt="Icone Troca de conectores"></div>
+            <div class="box__card cc__8"><img src="assets/pictures/icones-mobile/Reparo na placa principal.png" alt="Icone reparo na placa principal"></div>
+            <div class="box__card cc__9"><img src="assets/pictures/icones-mobile/Desoxidação de celular.png" alt="Icone desoxidação"></div>
+          </div>
+          <div class="botao">
+            <a href="#" class="servicos_botao">Fale conosco</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="sobre">
+        <img class="sobre-img" src="assets/pictures/prime-cell.png" alt="logo prime cell" />
+        <h2 class="sobre-titulo detalhe-verde">Sobre a Prime Cell</h2>
+        <div class="sobre-description-container">
+          <p class="sobre-texto"> A Prime Cell possui uma ampla variedade de serviços voltados para
+            telefonia celular e, com ela, você pode comprar acessórios originais e
+            solicitar assistência técnica para celulares e smartphones das diversas
+            marcas como: Iphone, LG, Motorola, Samsung e Xiaomi. O conserto do
+            celular é feito por técnicos altamentente capacitados e que oferecem
+            garantia adequada para cada tipo de conserto e aparelho.</p>
+          <p class="sobre-texto ">
+            O laboratório da Prime Cell conta com equipamentos de última geração,
+            especiais para realizar o conserto em todas as marcas de celular, sendo
+            eles nacionais ou importados.
+          </p>
+        </div>
+      </section>
+    </div>
+
+
+
+  </main>
+  <footer id="contatos" class="rodape">
+    <div class="background-footer">
+    </div>
+    <div class="container">
+      <h3 class="sub_titulo">Loja</h3>
+      <div class="footer_localizacao">
+        <img src="assets/pictures/icones/icone-localização.png" alt="">
+        <p class="texto_p"><a href="https://www.google.com/maps/place/R.+Marqu%C3%AAs+de+Olinda,+34+-+S%C3%A3o+Crist%C3%B3v%C3%A3o,+Cabo+Frio+-+RJ,+28909-470/@-22.89184,-42.041781,15z/data=!4m5!3m4!1s0x971adecdb08adf:0x86b477607eceaaf!8m2!3d-22.8918403!4d-42.041781?hl=pt-BR" target="_blank">Rua Marquês de Olinda n°34</a></p>
+      </div>
+      <h3 class="sub_titulo">Contatos:</p>
+        <div class="footer_whats test">
+          <img src="assets/pictures/icones/icone-whatasapp.png" alt="">
+          <p class="texto_p">(22) 99867-7325</p>
+        </div>
+        <div class="footer_ig">
+          <img src="assets/pictures/icones/icone-instagram.png" alt="">
+          <p class="texto_p">@primecell.cf.7</p>
+        </div>
+        <div class="footer_face">
+          <img src="assets/pictures/icones/icone-facebook.png" alt="">
+          <p class="texto_p">@primecell.cf</p>
+        </div>
+        <div class="footer_email">
+          <img src="assets/pictures/icones/Icone-email.png" alt="">
+          <p class="texto_p">primecell.cf@gmail.com</p>
+        </div>
+        <div class="footer_horario">
+          <img src="assets/pictures/icones/icone-relogio.png" alt="">
+          <p class="texto_p">Seg. a Sex: 9:00 - 18:30 - Sab: 10:00 -12:00</p>
+        </div>
+    </div>
+  </footer>
+
+  <div class="footer-info">
+    <p class="info-prime">© Prime Cell 2019 - 2022. Todos os direitos reservados.</p>
+    <p class="codei-web">Desenvolvido por <a href="#">CodeiWeb</a></p>
+  </div>
+  <div class="button-fixed">
+    <button type="button">
+      <a href="#top"><img class="img-button" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSL_r6ngdpETD5zEbNOg-beUOSqiSK6RezZI1_9RhV_YK_tjHtNgA85hbQIgaA0fbdxDw&usqp=CAU" alt=""></a>
+    </button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
